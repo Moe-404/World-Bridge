@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <title>Contact US</title>
+</head>
+<body>
+    <!-- start of the navBar -->
+    <nav>
+        <div>
+            <a href="../home/index.html">
+                <img src="../images/logo.png" alt="logo" id="logo">
+            </a>
+        </div>
+        <ul class="menuItems">
+            <li><a href="../home/index.html">Home</a></li>
+            <li><a href='../about/index.html'>About</a></li>
+            <li><a href='../admission/index.html'>Admission</a></li>
+            <li><a href='../payment/index.html'>Fees</a></li>
+            <li><a href='../contact/index.html'>Contact</a></li>
+        </ul>
+    </nav>
+    <!-- end of the navBar -->
+    <!-- start of the team -->
+    <section class="team">
+        <h2 class="our-team">Our Team</h2>
+        <div class="row">
+            <div class="colum">
+                <div class="card">
+                    <div class="card-container">
+                        <h2>Mohamed Eid</h2>
+                        <h3 class="title">Director</h3>
+                        <h4>mohamed@gmail.com</h4>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="colum">
+                <div class="card">
+                    <div class="card-container">
+                        <h2>Ahmed Ali</h2>
+                        <h3 class="title">Vice Director</h3>
+                        <h4>ahmed@gmail.com</h4>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="colum">
+                <div class="card">
+                    <div class="card-container">
+                        <h2>Adel Ahmed</h2>
+                        <h3 class="title">Teacher</h3>
+                        <h4>adel@gmail.com</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of the team -->
+    <section class="address">
+        <h2 class="our-add">Our Address</h2>
+        <div class="row">
+            <div class="colum">
+                <div class="card">
+                    <div class="card-container ">
+                        <h2>Address</h2>
+                        <h4>5th Settlement, Cairo, Egypt</h4>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="colum">
+                <div class="card">
+                    <div class="card-container">
+                        <h2>P.O Box</h2>
+                        <h4>51 5th Settlement City  Behind Cairo festival, 5th Settlement, Cairo +202, EG</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact-form-outline">
+        <div class="contact-in">
+            <div class="contact-map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13820.643021591051!2d31.415955046541136!3d30.003540147431586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583cc75436d909%3A0x7f921d4528ec3e03!2sThe%205th%20Settlement%2C%20Cairo%20Governorate!5e0!3m2!1sen!2seg!4v1701293449949!5m2!1sen!2seg"
+                    width="100%" height="auto" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="contact-form">
+                <h1>Contact Us</h1>
+                <form action="contact.php" method="POST">
+                    <input type="text" name="name" placeholder="Enter Your Name" class="contact-form-txt" required>
+                    <input type="email" name="email" placeholder="Enter Your Email" class="contact-form-txt" required>
+                    <input type="text" name="subject" placeholder="Enter Your Subject" class="contact-form-txt" required>
+                    <textarea name="message" placeholder="Enter Your Message" class="contact-form-textarea" required></textarea>
+                    <button type="submit" name="submit" class="contact-form-btn">Send Message</button>
+            </div>
+        </div>
+    </section>
+    <!-- end of the main -->
+</body>
+</html>

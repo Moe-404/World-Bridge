@@ -1,0 +1,808 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #f9f9f9;
+}
+#logo{
+    width: 100px;
+    height: 100px;
+    
+}
+/* ========== start of nav section style ========== */
+nav {
+    position: sticky !important;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: #f9f9f9;
+
+    .menuItems {
+        list-style: none;
+        display: flex;
+        li {
+            margin: 40px;
+            a {
+                text-decoration: none;
+                color: #8f8f8f;
+                font-size: 24px;
+                font-weight: 400;
+            }
+        }
+        margin-right: 100px;
+        :hover {
+            color: #35aab4;
+        }
+    }
+}
+
+/* ========== end of nav section style ========== */
+
+/* ========== start of header section style ========== */
+.head-bg img{
+    width: 100%;
+    height: 85vh;
+    object-fit: cover;
+    filter: brightness(50%);
+}
+
+.apply{
+    width : 650px;
+    height: 250px;
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+    background-color: rgba(53, 170, 180, 0.5);
+    height: auto;
+    display: block;
+    padding: 30px;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 400;
+    line-height: 27px;
+    margin: 0 auto;
+    border-radius: 10px;
+
+    .title{
+        color: #fff;
+        font-size: 28px;
+        line-height: 36px;
+        margin-top: 0;
+    }
+
+    .btn{
+        z-index: 0;
+        width: 125px;
+        background-color: none;
+        color: #fff;
+        border: 1px solid #fff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 16px;
+        font-weight: 400;
+        margin-left: 40%;
+        margin-top: 20px;
+        transition: transform .3s;
+        a{
+            text-decoration: none;
+            color: #fff;
+        }
+    }
+    .btn:hover {
+        transform: scale(1.1);
+        background-color: #35aab4;
+        border: none;
+    }
+}
+
+/* ========== end of header section style ========== */
+
+/* ========== start of welcome and images section style ========== */
+.welcome{
+    width: 100%;
+    height: 70vh;
+    align-items: center;
+    text-align: center;
+    padding-top: 50px;
+
+    h1{
+        font-size: 40px;
+        font-weight: 600;
+        margin-bottom: 20px;
+
+        #world{
+            width: 100px;
+            height: 5px;
+            color: #35aab4;
+            margin: 0 auto;
+        }
+        #bridge{
+            width: 100px;
+            height: 5px;
+            color: #ff9d54;
+            margin: 0 auto;
+        }
+    }
+
+    p{
+        font-size: 20px;
+        font-weight: 400;
+        color: #333;
+        margin-bottom: 50px;
+    }
+}
+
+.myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.myImg:hover {
+    opacity: 0.7;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image */
+.caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation */
+.modal-content,
+#caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0.1)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+/* The Close Button */
+#close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+#close:hover,
+#close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px) {
+    .modal-content {
+        width: 100%;
+    }
+}
+
+/* ========== end of welcome and images section style ========== */
+
+/* ========== start of vision and mision section style ========== */
+
+.vision-mission{
+    width: 100%;
+    height: 70vh;
+    align-items: center;
+    text-align: center;
+    padding-top: 50px;
+
+    h3{
+        font-size: 40px;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+    p{
+        font-size: 20px;
+        font-weight: 400;
+        color: #333;
+        margin-bottom: 20px;
+    }
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    /* Default to a single column */
+    gap: 30px;
+    margin: 70px auto;
+    max-width: 1000px;
+}
+
+@media (min-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 columns on larger screens */
+    }
+}
+
+
+.grid-item {
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid #35aab4;
+    padding: 20px;
+    position: relative;
+    
+    transition: transform 0.3s ease-in-out;
+}
+
+.circle-icon {
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    margin: -40px auto 0 auto;
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    border: 2px solid #35aab4;
+}
+
+.circle-icon img {
+    width: 80%;
+    height: auto;
+}
+
+h3 {
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+}
+
+/* cool hover effect */
+.grid-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* lift up effect */
+.grid-item:hover {
+    transform: translateY(-5px);
+}
+
+.grid-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    
+    border-radius: 10px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.grid-item:hover::before {
+    opacity: 1;
+}
+
+            /* ========== end of vision and mision section style ========== */
+
+        /************************** end of home page style ***************************/ 
+
+        /********************* start of admission page style *********************/
+
+                /* ========== start of admission section style ========== */
+h1 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.container {
+    margin-bottom: 20px;
+    position: relative;
+    left: 25%;
+    right: 25%;
+    max-width: 700px;
+    width: 100%;
+    background: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.container header {
+    font-size: 1.9rem;
+    color: #35aab4;
+    font-weight: 500;
+    text-align: center;
+}
+
+.container .form {
+    margin-top: 30px;
+}
+
+.form .input-box {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.input-box label {
+    color: #333;
+}
+
+.form :where(.input-box input, .select-box) {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    outline: none;
+    font-size: 1rem;
+    color: #707070;
+    margin-top: 8px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 0 15px;
+}
+
+.input-box input:focus {
+    border: 1px solid #35aab4;
+}
+
+.input-box textarea:focus {
+    border: 1px solid #35aab4;
+}
+
+.form .column {
+    display: flex;
+    column-gap: 15px;
+}
+
+.form .gender-box {
+    margin-top: 20px;
+}
+
+.gender-box h3 {
+    color: #333;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+
+.form :where(.gender-option, .gender) {
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+    flex-wrap: wrap;
+}
+
+.form .gender {
+    column-gap: 5px;
+}
+
+.gender input {
+    accent-color: #35aab4;
+}
+
+.form :where(.gender input, .gender label) {
+    cursor: pointer;
+}
+
+.gender label {
+    color: #707070;
+}
+
+.grade :where(input, .select-box) {
+    margin-top: 15px;
+}
+
+
+.form button {
+    height: 55px;
+    width: 100%;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background: #35aab4;
+}
+
+.form button:hover {
+    transform: scale(1.05);
+}
+
+/*Responsive*/
+@media screen and (max-width: 500px) {
+    .form .column {
+        flex-wrap: wrap;
+    }
+
+    .form :where(.gender-option, .gender) {
+        row-gap: 15px;
+    }
+}
+
+.input-box textarea {
+    height: 100%;
+    width: 100%;
+    border: 1px solid #ddd;
+    outline: none;
+    font-size: 16px;
+    border-radius: 6px;
+    padding: 0 15px;
+    resize: none;
+}
+
+.message-box textarea{
+    min-height: 110px;
+}
+
+.input-box textarea:focus {
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.input-box textarea {
+    padding-top: 6px;
+}
+
+                    /* ========== end of admission section style ========== */
+
+            /********************* end of admission page style *********************/
+
+            /********************* start of contact page style *********************/
+                
+                    /* ========== start of contact section style ========== */
+.contact-in{
+    width: 80%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+    /* make box shadow from all side */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.contact-map{
+    width: 100%;
+    height: auto;
+    flex: 50%;
+}
+
+.contact-map iframe{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.contact-form{
+    width: 100%;
+    height: auto;
+    flex: 50%;
+    padding: 30px;
+    text-align: center;
+}
+
+.contact-form h1{
+    margin-bottom: 10px;
+    color : #333;
+}
+
+.contact-form-txt{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    outline: none;
+    border-radius: 50px;
+    padding: 15px;
+}
+.contact-form-txt:focus{
+    border: 1px solid #35aab4;
+}
+.contact-form-txt::placeholder{
+    color: #aaa;
+}
+.contact-form-textarea {
+    width: 100%;
+    height: 130px;
+    margin-bottom: 20px;
+    color: #333;
+    border: 1px solid #ddd;
+    outline: none;
+    border-radius: 10px;
+    padding: 15px;
+    resize: none;
+}
+.contact-form-textarea:focus{
+    border: 1px solid #35aab4;
+}
+.contact-form-textarea::placeholder{
+    color: #aaa;
+}
+
+.contact-form-btn{
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    background-color: #35aab4;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 18px;
+    padding: 10px 0;
+}
+.contact-form-btn:hover{
+    transform: scale(1.1);
+}
+
+.contact-form-outline{
+    margin-bottom: 50px;
+}
+                    /* ========== end of contact section style ========== */
+
+                    /* ========== start of Team section style ========== */
+.team .team::before, .team .team::after {
+    box-sizing: inherit;
+}
+
+.team{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.our-team{
+    color: #35aab4;
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.row{
+    padding-left: 15%;
+}
+.colum {
+    float: left;
+    width: 30%;
+    margin-bottom: 32px;
+    padding: 0 8px;
+}
+
+.card {
+    width: 230px;
+    height: 254px;
+    border-radius: 30px;
+    background: #e0e0e0;
+    box-shadow: 15px 15px 30px #bebebe,
+        -15px -15px 30px #ffffff;
+}
+
+.about-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #474e5d;
+    color: white;
+}
+
+.card-container {
+    text-align: center;
+    padding: 0 16px;
+}
+
+.card-container h4{
+    margin-top: 50px;
+}
+.card-container h3 {
+    margin-top: 10px;
+}
+
+.card-container::after,
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.title {
+    color: #333;
+    font-size: 24px;
+}
+
+.card-container h2 {
+    padding: 30px 20px 20px 20px;
+}
+
+.address{
+    margin-left: 20%;
+    margin-bottom: 3%;
+}
+
+.our-add{
+    color:#ff9d54;
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-right: 305px;
+}
+
+@media screen and (max-width: 650px) {
+    .column {
+        width: 100%;
+        display: block;
+    }
+}
+
+                    /* ========== end of Team section style ========== */
+
+            /********************* end of contact page style *********************/
+
+            /********************* start of fees page style *********************/
+
+                    /* ========== start of fees section style ========== */
+
+
+.table {
+    margin-top: 10px;
+    border-collapse: collapse;
+    width: 50%;
+    
+    th,td {
+        text-align: center;
+        padding: 8px;
+    }
+    tr:nth-child(even) {
+        background-color: #f2f2f2
+    }
+
+    th {
+        background-color: #35aab4;
+        color: white;
+    }
+}
+
+.table-bordered,
+.table-bordered td,
+.table-bordered th {
+    border: 1px solid #dee2e6;
+}
+
+.fees h1{
+    text-align: left;
+    color: #35aab4;
+}
+
+.fees p{
+    margin-bottom: 5px;
+}
+
+.fees{
+    padding-left: 18%;
+    margin-bottom: 20px;
+}
+
+.fees h3{
+    padding-top: 5px;
+}
+
+.fees h2{
+    margin-top: 10px;
+    color: #ff9d54;
+}
+
+.fees ul{
+    margin-left: 20px;
+}
+
+                    /* ========== end of fees section style ========== */
+
+            /********************* end of fees page style *********************/
+
+            /********************* start of about page style *********************/
+
+                    /* ========== start of curriculum section style ========== */
+.curriculumOverview{
+    padding-left: 18%;
+}
+
+.curriculumOverview h1{
+    text-align: left;
+    color: #35aab4;
+}
+
+.curriculumOverview p{
+    margin-bottom: 5px;
+}
+
+.curriculumOverview h3{
+    padding-top: 5px;
+    color: #ff9d54;
+}
+
+.curriculumOverview ul{
+    margin-left: 20px;
+}
+
+.last{
+    padding-top: 10px;
+    color: #35aab4;
+
+}
+
+                    /* ========== end of curriculum section style ========== */
+
+                    /* ========== start of academic calender section style ========== */
+.academicYearCalender{
+    padding-left: 18%;
+}
+.academicYearCalender h1{
+    padding-right: 24%;
+}
+            /********************* end of about page style *********************/

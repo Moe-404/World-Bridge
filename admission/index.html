@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Admission</title>
+</head>
+<body>
+    <!-- start of the navBar -->
+    <nav>
+        <div>
+            <a href="../home/index.html">
+                <img src="../images/logo.png" alt="logo" id="logo">
+            </a>
+        </div>
+        <ul class="menuItems">
+            <li><a href="../home/index.html">Home</a></li>
+            <li><a href='../about/index.html'>About</a></li>
+            <li><a href='../admission/index.html'>Admission</a></li>
+            <li><a href='../payment/index.html'>Fees</a></li>
+            <li><a href='../contact/index.html'>Contact</a></li>
+        </ul>
+    </nav>
+    <!-- end of the navBar -->
+    <!-- start of the main -->
+    <section class="container">
+        <header>Admission Form</header>
+        <form action="applications.php" method="post" class="form">
+            <div class="input-box">
+                <label>Full Name</label>
+                <input type="text" placeholder="Enter full name" name="name" id="name" onchange="validateName()" required />
+                <p id="nameError"></p>
+            </div>
+            <div class="input-box">
+                <label>Email Address</label>
+                <input type="text" placeholder="Enter email address" name="email" id="email" onchange="validateEmail()" required />
+                <p id="emailError"></p>
+            </div>
+            <div class="column">
+                <div class="input-box">
+                    <label>Phone Number</label>
+                    <input type="number" placeholder="Enter phone number" name="phone" id="phone" onchange="validatePhone()" required />
+                    <p id="phoneError"></p>
+                </div>
+                <div class="input-box">
+                    <label>Birth Date</label>
+                    <input type="date" placeholder="Enter birth date" name="date" id="date" onchange="validateDate()" required />
+                    <p id="dateError"></p>
+                </div>
+            </div>
+            <div class="gender-box">
+                <h3>Gender</h3>
+                <div class="gender-option">
+                    <div class="gender">
+                        <input type="radio" id="check-male" name="gender" value="Male" checked />
+                        <label for="check-male">male</label>
+                    </div>
+                    <div class="gender">
+                        <input type="radio" id="check-female" name="gender" value="Female" />
+                        <label for="check-female">Female</label>
+                    </div>
+                    <div class="gender">
+                        <input type="radio" id="check-other" name="gender" value="Other" />
+                        <label for="check-other">prefer not to say</label>
+                    </div>
+                    <p id="genderError"></p>
+                </div>
+            </div>
+            <div class="input-box grade">
+                <label>Grade</label>
+                <input type="text" placeholder="Enter your grade" name="grade" id="grade" onchange="validateGrade()" required />
+                <p id="gradeError"></p>
+            </div>
+            <div class="input-box message-box">
+                <label>Comment</label>
+                <textarea placeholder="Enter your Comment" name="comment"></textarea>
+            </div>
+            <button>Submit</button>
+        </form>
+    </section>
+    <!-- end of the main -->
+</body>
+<script src="../js/main.js"></script>
+</html>
